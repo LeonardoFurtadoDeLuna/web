@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--Global CSS-->
+		<link rel="stylesheet" href="http://anyjobs.com.br/dist/css/main.css"/>
+
+		<!--Instalação das Fontes do Google-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+		
+		<!--Instalação da biblioteca de ícones CDN do FontAwesome-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	</head>
+    <title>{% block title %}{% endblock %}</title>
+	
+	<style>
+body {
+    background: #f1f1f175;
+}
+
+header {
+    background: #ffffff;
+}
+
+header hr {
+    margin: 0;
+    background: #c5c5c4;
+}
+
+header .container {
+    padding: 1em;
+}
+
+.logo {
+	width: 130px;
+}
+
+.caminhar a {
+	list-style: none;
+	text-decoration: none;
+	color: black
+}
+
+.icons {
+	width: 8%;
+	height: auto;
+	margin-left: 20px;
+	background-color: white;
+}
+
+.iconsFont {
+	font-size: 2vw;
+	margin-left: 2vw;
+	margin-right: 2vw;
+}
+
+.searchIcon {
+	width: 40%;
+	background-color: white;
+}
+
+header {
+	background-color: white;
+}
+
+.iconsCurriculum {
+	width: 10%;
+	height: auto;
+}
+
+.iconsPencil {
+	width: 4.5%;
+	height: auto;
+	margin-left: 10px;
+}
+
+.iconsEye {
+	width: 10%;
+	height: auto;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.avatar {
+	width: 60%;
+	height: auto;
+	border: solid black 1px;
+	border-radius: 50%;
+}
+
+.iconEdit {
+	width: 7%;
+	margin-left: 10px;
+}
+
+.menu {
+	border-radius: 50%;
+	border: solid black 1px;
+	padding: 2px;
+	display: none;
+}
+
+
+.menuProfile {
+	display: none;
+	position: absolute;
+	text-align: center;
+	background-color: blue;
+	justify-content: end;
+	z-index: 5;
+}
+
+.menuProfileItens li a {
+	text-decoration: none;
+	color: black;
+}
+
+.menuProfileItens img {
+	display: none;
+}
+
+.vaga {
+	display: none;
+}
+
+
+.nav_tabs {
+	margin-top: 10px;
+	min-height: 150px;
+	width: auto;
+	height: auto;
+	position: relative;
+	display: flex;
+}
+
+.nav_tabs ul {
+	list-style: none;
+}
+
+.nav_tabs label {
+	display: block;
+	color: black;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 2.5vw;
+}
+
+.rd_tabs:checked~label {
+	border-bottom: 2px solid blue;
+}
+
+.rd_tabs {
+	display: none;
+}
+
+.content {
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	left: 0
+}
+
+.rd_tabs:checked~.content {
+	display: block;
+}
+
+
+.menuHamburguer {
+	display: none;
+}
+
+.footerCenter {
+	text-align: center;
+}
+
+
+.menu {
+	list-style: none;
+	border: 1px solid #c0c0c0;
+	float: left;
+}
+
+.menu li {
+	position: relative;
+	float: left;
+	border-right: 1px solid #c0c0c0;
+}
+
+
+.menu li a {
+	color: #333;
+	text-decoration: none;
+	padding: 5px 10px;
+	display: block;
+}
+
+.menu li a:hover {
+	background: #333;
+	color: #fff;
+	/* -moz-box-shadow:0 3px 10px 0 #CCC;
+        -webkit-box-shadow:0 3px 10px 0 #ccc; */
+	text-shadow: 0px 0px 5px #fff;
+}
+
+
+@media (max-width: 768px) {
+	.logo {
+		display: none;
+	}
+
+	.icons {
+		display: none;
+	}
+
+	.menuHamburguer {
+		display: flex;
+		font-size: 5vw;
+		justify-content: center;
+	}
+
+	.menu {
+		display: inline-block;
+	}
+
+
+	.menuProfile {
+		display: none;
+		position: absolute;
+		background-color: white;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		justify-content: center;
+		align-items: center;
+		z-index: 5;
+
+	}
+
+	.menuProfile li {
+		margin: 1vw;
+	}
+
+	.menuProfile ul li a {
+		text-decoration: none;
+		color: black;
+		font-size: 3.5vw;
+	}
+
+	.menuProfileItens {
+		text-align: center;
+	}
+
+
+	#menuClose {
+		display: none;
+		z-index: 5;
+	}
+
+	.iconsFont {
+		display: none !important;
+	}
+
+
+}
+	</style>
+</head>
+<body>
+	<div>
+		<header>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-4"><img class="logo" src="http://anyjobs.com.br/img/logo.svg"></div>
+					<div class="col-md-4 col-sm-8 col-8">
+						<form method="GET">
+							<div class="input-group align-self-center">
+								<input class="form-control form-control-sm" name="q" type="search" placeholder="Pesquisar" aria-label="Search" />
+								<button class="bg-white border border-ligth" type="submit">
+								<img class="searchIcon" src="http://anyjobs.com.br/img/search.svg" />
+								</button>
+							</div>
+						</form>
+					</div>
+					<!--IConfinder - Nome do site de icones-->
+					<div class="col-md-4 col-sm-4 col-4">
+						<div class="d-flex justify-content-end">
+							<div class="col-sm-4 col-4">
+								<span onclick="openProfile()" class="menuHamburguer"><i id="menuOpen"
+									class="fa-solid fa-bars"></i></span>
+								<span onclick="openProfile()" class="menuHamburguer" id="menuClose"><i
+									class="fa-solid fa-xmark"></i></span>
+							</div>
+						</div>
+						<div class="text-end">
+							<a href="./favorites.html"><i class="fa-regular fa-heart iconsFont"></i></a>
+							<a href="#"><i class="fa-regular fa-bell iconsFont"></i></a>
+							<span onclick="openProfile()"><i class="fa-regular fa-user iconsFont"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+		</header>
+	</div>
+    {% block body %}
+    {% endblock %}
+	
+	<!--Global JavaScript-->
+	<script src="http://anyjobs.com.br/dist/js/main.js"></script>
+</body>
+</html>
