@@ -22,7 +22,7 @@
         crossorigin="anonymous"></script>
 
     <!--Global CSS-->
-    <link rel="stylesheet" href="/web/public/src/css/style.css" />
+    <link rel="stylesheet" href="/public/src/css/style.css" />
 
     <!--Instalação das Fontes do Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,65 +38,57 @@
 <body>
 
 
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="internal_border">
+            <div class="">
+                <div class="">
 
-    <div class="d-flex justify-content-center align-items-center"
-        style="background-image: url('http://anyjobs.com.br/img/background-login.svg'); height: 100vh;">
-        <div class="d-flex justify-content-center ">
-            <div class="bg-light border border-dark rounded p-5 mt-5">
+                    <div class="text-center">
 
-                <div class="text-center">
+                        <h3 id="title">Coding</h3>
 
-                    <h1 id="title">Coding</h1>
-
-                </div>
-
-                <form action="/action_page.php" method="GET">
-
-                    <div class="forms_inputs">
-
-
-
-                        <div class="input-group mb-3 border_color">
-                            <div class="input-group-prepend">
-                                <span class="border_decoration input-group-text bg-white cinza border-0" id="basic-addon1">E-mail</span>
-                            </div>
-                            <input type="text" class="form-control border-0 " aria-label="Username"
-                                aria-describedby="basic-addon1">
-                        </div>
-
-
-
-                        <br>
-
-
-
-
-                        <div class="input-group mb-3 border_color">
-                            <div class="input-group-prepend">
-                                <span class="border_decoration input-group-text bg-white cinza border-0" id="basic-addon1">Senha</span>
-                            </div>
-                            <input type="text" class="form-control border-0 " aria-label="Username"
-                                aria-describedby="basic-addon1">
-                        </div>
-
-
-                    <p class="mt-2"><a class="link-primary text-decoration-none" href="">Esqueceu sua senha?</a></p>
-
-
-
-                    <div class="text-center mt-4">
-                        <input class="btn btn-primary " type="submit" value="Enviar">
                     </div>
 
-                </form>
+                    <form action="/action_page.php" method="GET">
+
+                        <div class="forms_inputs mt-5">
+                            <div class="input-group border_color">
+                                <div class="input-group-prepend">
+                                    <span class="border_decoration input-group-text bg-white cinza border-0"
+                                        id="basic-addon1">E-mail</span>
+                                </div>
+                                <input type="text" class="form-control border-0 inputs" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+
+                            <br>
+
+                            <div class="input-group border_color">
+                                <div class="input-group-prepend">
+                                    <span class="border_decoration input-group-text bg-white cinza border-0"
+                                        id="basic-addon1">Senha</span>
+                                </div>
+                                <input type="password" class="form-control border-0 " aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
 
 
 
-                <p class="float-end mt-5"><a class="link-primary text-decoration-none" href="">Primeiro Acesso</a></p>
+
+                            <div class="text-center mt-5">
+                                <input class="btn btnLogin" type="submit" value="Login">
+                            </div>
+                        </div>
+                    </form>
+
+                    <p class="mt-5 mb-0 password_forget"><a class="link-primary text-decoration-none" href="">Esqueceu sua senha?</a>
+                    </p>
 
 
 
 
+
+                </div>
             </div>
         </div>
     </div>
