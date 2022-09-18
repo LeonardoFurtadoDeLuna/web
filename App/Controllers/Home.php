@@ -15,7 +15,7 @@ class Home extends \Core\Controller
     /**
      * Show the index page
      *
-     * @return void
+     * @return void 
      */
     public function indexAction()
     {

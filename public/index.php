@@ -30,7 +30,7 @@ $router->add('', ['controller' => 'Home', 'action' => 'index']);
 //$router->add('jobs', ['controller' => 'Jobs', 'action' => 'index']);
 //$router->add('profile', ['controller' => 'Profile', 'action' => 'index']);
 $router->add('login', ['controller' => 'Login', 'action' => 'index']);
-//$router->add('registration', ['controller' => 'Registration', 'action' => 'index']);
+//$router->add('registration', ['controller' => 'Registration', 'action' => 'index']); 
 $router->add('{controller}/{action}');
     
 $router->dispatch($_SERVER['QUERY_STRING']);
