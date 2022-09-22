@@ -1,17 +1,13 @@
-@media screen and (max-width: 932px) {
+@media screen and (max-width: 1170px) {
 
   .imagemCadastro{
     display: none;
   }
-
-
-}
-
-@media screen and (max-width: 768px) {
-
   .conteudo{
-    
-     
+    -ms-flex:0 0 100%;
+    flex:0 0 100%;
+    max-width:100%
   }
 
 }
+
