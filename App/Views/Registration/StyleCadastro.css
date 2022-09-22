@@ -1,0 +1,17 @@
+@media screen and (max-width: 932px) {
+
+  .imagemCadastro{
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .conteudo{
+    
+     
+  }
+
+}
